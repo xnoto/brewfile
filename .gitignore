@@ -1,0 +1,12 @@
+# Brewfile lock file
+Brewfile.lock.json
+
+# MacOS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
