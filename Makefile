@@ -1,9 +1,16 @@
-.DEFAULT_GOAL := install
+.DEFAULT_GOAL := check
 
-.PHONY: install sync
+.PHONY: check test install sync
+
+## Validate Brewfile syntax and check dependencies
+check:
+	brew bundle list --file=Brewfile >/dev/null
+
+## Alias for check
+test: check
 
 ## Install all packages from Brewfile
-install:
+install: check
 	brew bundle --file=Brewfile
 
 ## Regenerate Brewfile from currently installed packages
