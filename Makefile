@@ -15,7 +15,7 @@ install: check
 
 ## Regenerate Brewfile from currently installed packages
 sync:
-	brew bundle dump --describe --force --file=Brewfile
+	brew bundle dump --force --file=Brewfile
 	@echo ""
 	@if git diff --quiet Brewfile 2>/dev/null; then \
 		echo "Brewfile is already up to date."; \
