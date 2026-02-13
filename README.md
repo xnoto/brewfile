@@ -2,28 +2,30 @@
 
 macOS Homebrew packages, managed with `brew bundle`.
 
-## Usage
+## Make targets
 
-```sh
-make            # Install all packages from Brewfile
-make install    # Same as above
-make sync       # Regenerate Brewfile from installed packages
-```
+| Target | Description |
+|---|---|
+| `make` | Validate Brewfile syntax (default) |
+| `make test` | Alias for `make check` |
+| `make install` | Validate, then install all packages |
+| `make sync` | Regenerate Brewfile from installed packages |
 
-## Workflow
-
-Install packages on a new machine:
+## New machine setup
 
 ```sh
 git clone <this-repo>
 cd brewfile
-make
+make              # validate
+make install      # install packages
 ```
 
-After installing or removing packages via `brew`, sync the Brewfile:
+## Keeping in sync
+
+After installing or removing packages via `brew`:
 
 ```sh
-make sync       # Overwrites Brewfile, shows diff
-git diff        # Review changes
-git commit      # Commit when satisfied
+make sync         # regenerate Brewfile, show diff
+git diff          # review
+git commit        # commit when satisfied
 ```
