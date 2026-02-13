@@ -4,7 +4,8 @@
 
 ## Validate Brewfile syntax and check dependencies
 check:
-	brew bundle list --file=Brewfile >/dev/null
+	@echo "Validating Brewfile..."
+	@brew bundle list --file=Brewfile >/dev/null && echo "Success" || echo"Failed"
 
 ## Alias for check
 test: check
