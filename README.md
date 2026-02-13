@@ -7,6 +7,7 @@ macOS Homebrew packages, managed with `brew bundle`.
 | Target | Description |
 |---|---|
 | `make` | Validate Brewfile syntax (default) |
+| `make check` | Validate Brewfile syntax |
 | `make test` | Alias for `make check` |
 | `make install` | Validate, then install all packages |
 | `make sync` | Regenerate Brewfile from installed packages |
