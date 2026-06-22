@@ -1,11 +1,11 @@
 tap "argoproj/tap"
 tap "cormacrelf/tap"
 tap "eugene1g/safehouse"
-tap "felixkratz/formulae"
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "hashicorp/tap"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "slp/krunkit"
+tap "slp/krunkit", trusted: true
 tap "xnoto/opencode-agent-hub"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
@@ -31,6 +31,8 @@ brew "clang-format"
 brew "coreutils"
 # Static analysis of C and C++ code
 brew "cppcheck"
+# Device tree compiler
+brew "dtc"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Interact with Google Gemini AI models from the command-line
@@ -67,10 +69,14 @@ brew "kubernetes-cli"
 brew "kubeseal"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Library for handling OpenGL function pointer management
+brew "libepoxy"
 # Next-gen compiler infrastructure
 brew "llvm"
 # GUI for vim, made for macOS
 brew "macvim"
+# Implementation of the Vulkan graphics and compute API on top of Metal
+brew "molten-vk"
 # MongoDB CLI enables you to manage your MongoDB in the Cloud
 brew "mongocli"
 # MongoDB Shell to connect, configure, query, and work with your MongoDB database
@@ -79,6 +85,8 @@ brew "mongosh"
 brew "mongodb-atlas-cli"
 # Developer-focused CLI for Kubernetes and OpenShift
 brew "odo-dev"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
 # OpenShift command-line interface tools
@@ -145,6 +153,8 @@ brew "yamllint"
 brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# A CLI tool to start Linux KVM or macOS Hypervisor framework virtual machines using the libkrun platform.
+brew "slp/krunkit/krunkit"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
