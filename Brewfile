@@ -3,9 +3,9 @@ tap "cormacrelf/tap"
 tap "eugene1g/safehouse"
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "hashicorp/tap"
+tap "libkrun/krun", trusted: true
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "slp/krunkit", trusted: true
 tap "xnoto/opencode-agent-hub"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
@@ -89,8 +89,6 @@ brew "odo-dev"
 brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
-# OpenShift command-line interface tools
-brew "openshift-cli"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
 brew "opentofu"
 # SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension
@@ -153,16 +151,19 @@ brew "yamllint"
 brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
-# A CLI tool to start Linux KVM or macOS Hypervisor framework virtual machines using the libkrun platform.
-brew "slp/krunkit/krunkit"
+# CLI tool to start Linux KVM or macOS HVF VMs using the libkrun
+brew "libkrun/krun/krunkit", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "nikitabobko/tap/aerospace"
+cask "aerospace"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Agent orchestration platform
+cask "antigravity"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
 # Desktop password and login vault
@@ -189,6 +190,8 @@ cask "google-chrome"
 cask "libreoffice"
 # App to manage software development and track bugs
 cask "linear"
+# Optimise your webcam, headset, and Logi Dock for video meetings
+cask "logitune"
 # Syncs files between computers and MEGA Cloud drives
 cask "megasync"
 # Digital note taking app
