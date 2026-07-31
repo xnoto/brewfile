@@ -84,6 +84,8 @@ brew "mongocli"
 brew "mongosh"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
+# JavaScript runtime required by npx-based MCP servers
+brew "node"
 # Developer-focused CLI for Kubernetes and OpenShift
 brew "odo-dev"
 # Search tool like grep and The Silver Searcher
