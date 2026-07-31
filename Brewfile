@@ -1,12 +1,13 @@
 tap "argoproj/tap"
 tap "cormacrelf/tap"
+tap "eskelinenantti/cli", "https://github.com/EskelinenAntti/homebrew-cli"
 tap "eugene1g/safehouse"
 tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
 tap "hashicorp/tap"
 tap "libkrun/krun", trusted: true
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "xnoto/opencode-agent-hub"
+tap "xnoto/opencode-agent-hub", trusted: true
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
 # Simple, modern, secure file encryption
@@ -147,12 +148,16 @@ brew "vivid"
 brew "watch"
 # Linter for YAML files
 brew "yamllint"
+# Tool for managing your YubiKey configuration
+brew "ykman"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # CLI tool to start Linux KVM or macOS HVF VMs using the libkrun
 brew "libkrun/krun/krunkit", trusted: true
+# Multi-agent coordination daemon and tools for OpenCode
+brew "xnoto/opencode-agent-hub/opencode-agent-hub"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
