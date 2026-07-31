@@ -12,7 +12,12 @@ endif
 ## Validate Brewfile syntax and check dependencies
 check: ensure-brew
 	@echo "Validating Brewfile..."
-	@brew bundle list --file=Brewfile >/dev/null && echo "Success" || echo "Failed"
+	@if "$(BREW)" bundle list --file=Brewfile >/dev/null; then \
+		echo "Success"; \
+	else \
+		echo "Failed" >&2; \
+		exit 1; \
+	fi
 
 ## Alias for check
 test: check
