@@ -8,6 +8,8 @@ tap "libkrun/krun", trusted: true
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
 tap "xnoto/opencode-agent-hub", trusted: true
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
 # Simple, modern, secure file encryption
@@ -28,6 +30,8 @@ brew "checkov"
 brew "chezmoi"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Static analysis of C and C++ code
@@ -62,6 +66,8 @@ brew "kimi-cli"
 brew "kind"
 # Flexible Kustomize Plugin for SOPS Encrypted Resources
 brew "ksops"
+# OpenID Connect authentication plugin for kubectl
+brew "kubelogin"
 # Easily check your clusters for use of deprecated APIs
 brew "kubent"
 # Kubernetes command-line interface
@@ -76,6 +82,8 @@ brew "libepoxy"
 brew "llvm"
 # GUI for vim, made for macOS
 brew "macvim"
+# CLI for Node.js style checker and lint tool for Markdown files
+brew "markdownlint-cli"
 # Implementation of the Vulkan graphics and compute API on top of Metal
 brew "molten-vk"
 # MongoDB CLI enables you to manage your MongoDB in the Cloud
@@ -84,8 +92,6 @@ brew "mongocli"
 brew "mongosh"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
-# JavaScript runtime required by npx-based MCP servers
-brew "node"
 # Developer-focused CLI for Kubernetes and OpenShift
 brew "odo-dev"
 # Search tool like grep and The Silver Searcher
@@ -181,6 +187,8 @@ cask "cloudflare-warp"
 cask "codex"
 # Tool to run Windows software
 cask "crossover"
+# Command-line agent for Cursor
+cask "cursor-cli"
 # Voice and text chat software
 cask "discord"
 # Drivers for DisplayLink docks, adapters and monitors
