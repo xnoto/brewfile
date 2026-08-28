@@ -36,6 +36,8 @@ brew "cloudflared"
 brew "coreutils"
 # Static analysis of C and C++ code
 brew "cppcheck"
+# Enterprise friendly way of detecting and preventing secrets in code
+brew "detect-secrets"
 # Device tree compiler
 brew "dtc"
 # Functional metaprogramming aware language built on Erlang VM
@@ -54,14 +56,16 @@ brew "gnupg"
 brew "go"
 # CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more
 brew "googleworkspace-cli"
+# Smarter Dockerfile linter to validate best practices
+brew "hadolint"
 # Kubernetes package manager
 brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
-# CLI agent for MoonshotAI Kimi platform
-brew "kimi-cli"
+# AI coding agent for your terminal
+brew "kimi-code"
 # Run local Kubernetes cluster in Docker
 brew "kind"
 # Flexible Kustomize Plugin for SOPS Encrypted Resources
@@ -246,3 +250,8 @@ npm "better-sqlite3"
 npm "context-mode"
 npm "mmx-cli"
 npm "opencode-docs-mcp"
+npm "pptxgenjs"
+npm "react-dom"
+npm "react-icons"
+npm "react"
+npm "sharp"
