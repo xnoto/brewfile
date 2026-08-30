@@ -7,7 +7,6 @@ tap "hashicorp/tap"
 tap "libkrun/krun", trusted: true
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "xnoto/opencode-agent-hub", trusted: true
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Static checker for GitHub Actions workflow files
@@ -98,7 +97,7 @@ brew "mongosh"
 brew "mongodb-atlas-cli"
 # Developer-focused CLI for Kubernetes and OpenShift
 brew "odo-dev"
-# Search tool like grep and The Silver Searcher
+# Search tool like grep and (The) Silver Searcher
 brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
@@ -168,8 +167,6 @@ brew "yq"
 brew "yt-dlp"
 # CLI tool to start Linux KVM or macOS HVF VMs using the libkrun
 brew "libkrun/krun/krunkit", trusted: true
-# Multi-agent coordination daemon and tools for OpenCode
-brew "xnoto/opencode-agent-hub/opencode-agent-hub"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -209,7 +206,7 @@ cask "google-chrome"
 cask "libreoffice"
 # App to manage software development and track bugs
 cask "linear"
-# Optimise your webcam, headset, and Logi Dock for video meetings
+# Optimise your webcam, headset, and Logitech Dock for video meetings
 cask "logitune"
 # Syncs files between computers and MEGA Cloud drives
 cask "megasync"
@@ -231,7 +228,7 @@ cask "paintbrush"
 cask "podman-desktop"
 # Team communication and collaboration software
 cask "slack"
-# Music streaming service
+# Music streaming software
 cask "spotify"
 # Video game digital distribution service
 cask "steam"
@@ -241,7 +238,7 @@ cask "tailscale-app"
 cask "thunderbird"
 # Remote desktop application focusing on security
 cask "vnc-viewer"
-# Full-featured companion app to the YubiKey
+# Full-featured companion app for the YubiKey
 cask "yubico-authenticator"
 # Video communication and virtual meeting platform
 cask "zoom"
