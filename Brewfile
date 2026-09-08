@@ -91,7 +91,7 @@ brew "markdownlint-cli"
 brew "molten-vk"
 # MongoDB CLI enables you to manage your MongoDB in the Cloud
 brew "mongocli"
-# MongoDB Shell to connect, configure, query, and work with your MongoDB database
+# MongoDB Shell to connect, configure, query, and work with MongoDB
 brew "mongosh"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
@@ -226,11 +226,11 @@ cask "notion"
 cask "paintbrush"
 # Browse, manage, inspect containers and images
 cask "podman-desktop"
-# Team communication and collaboration software
+# Team communication and collaboration
 cask "slack"
-# Music streaming software
+# Music streaming
 cask "spotify"
-# Video game digital distribution service
+# Video game digital distribution
 cask "steam"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
@@ -246,7 +246,6 @@ go "github.com/niwoerner/go-agentskills/cmd/go-agentskills"
 npm "better-sqlite3"
 npm "context-mode"
 npm "mmx-cli"
-npm "opencode-docs-mcp"
 npm "pptxgenjs"
 npm "react-dom"
 npm "react-icons"
