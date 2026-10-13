@@ -7,6 +7,7 @@ tap "hashicorp/tap"
 tap "libkrun/krun", trusted: true
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
+tap "xnoto/opencode-agent-hub", trusted: true
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Static checker for GitHub Actions workflow files
@@ -91,13 +92,13 @@ brew "markdownlint-cli"
 brew "molten-vk"
 # MongoDB CLI enables you to manage your MongoDB in the Cloud
 brew "mongocli"
-# MongoDB Shell to connect, configure, query, and work with MongoDB
+# MongoDB Shell to connect, configure, query, and work with your MongoDB database
 brew "mongosh"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
 # Developer-focused CLI for Kubernetes and OpenShift
 brew "odo-dev"
-# Search tool like grep and (The) Silver Searcher
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
@@ -121,6 +122,8 @@ brew "poppler"
 brew "postgresql@18"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
 # Password generator
 brew "pwgen"
 # Simple powerful testing with Python
@@ -167,6 +170,8 @@ brew "yq"
 brew "yt-dlp"
 # CLI tool to start Linux KVM or macOS HVF VMs using the libkrun
 brew "libkrun/krun/krunkit", trusted: true
+# Multi-agent coordination daemon and tools for OpenCode
+brew "xnoto/opencode-agent-hub/opencode-agent-hub"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -182,12 +187,10 @@ cask "antigravity-cli"
 cask "basictex"
 # Desktop password and login vault
 cask "bitwarden"
-# Free app that makes your Internet safer
-cask "cloudflare-warp"
+# Terminal-based AI coding assistant
+cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Tool to run Windows software
-cask "crossover"
 # Command-line agent for Cursor
 cask "cursor-cli"
 # Voice and text chat software
@@ -206,7 +209,7 @@ cask "google-chrome"
 cask "libreoffice"
 # App to manage software development and track bugs
 cask "linear"
-# Optimise your webcam, headset, and Logitech Dock for video meetings
+# Optimise your webcam, headset, and Logi Dock for video meetings
 cask "logitune"
 # Syncs files between computers and MEGA Cloud drives
 cask "megasync"
@@ -222,23 +225,25 @@ cask "microsoft-teams"
 cask "microsoft-word"
 # App to write, plan, collaborate, and get organised
 cask "notion"
+# AI coding agent desktop client
+cask "opencode-desktop"
 # Image editor
 cask "paintbrush"
 # Browse, manage, inspect containers and images
 cask "podman-desktop"
-# Team communication and collaboration
+# Remote desktop application focusing on security
+cask "realvnc-connect-viewer"
+# Team communication and collaboration software
 cask "slack"
-# Music streaming
+# Music streaming service
 cask "spotify"
-# Video game digital distribution
+# Video game digital distribution service
 cask "steam"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Customizable email client
 cask "thunderbird"
-# Remote desktop application focusing on security
-cask "vnc-viewer"
-# Full-featured companion app for the YubiKey
+# Full-featured companion app to the YubiKey
 cask "yubico-authenticator"
 # Video communication and virtual meeting platform
 cask "zoom"
@@ -246,6 +251,7 @@ go "github.com/niwoerner/go-agentskills/cmd/go-agentskills"
 npm "better-sqlite3"
 npm "context-mode"
 npm "mmx-cli"
+npm "opencode-docs-mcp"
 npm "pptxgenjs"
 npm "react-dom"
 npm "react-icons"
