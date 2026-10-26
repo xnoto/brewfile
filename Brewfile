@@ -1,13 +1,12 @@
-tap "argoproj/tap"
-tap "cormacrelf/tap"
-tap "eskelinenantti/cli", "https://github.com/EskelinenAntti/homebrew-cli"
-tap "eugene1g/safehouse"
-tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
-tap "hashicorp/tap"
+tap "argoproj/tap", trusted: { formula: "kubectl-argo-rollouts" }
+tap "cormacrelf/tap", trusted: { formula: "dark-notify" }
+tap "eugene1g/safehouse", trusted: { formula: "agent-safehouse" }
+tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae", trusted: { formula: "borders" }
+tap "hashicorp/tap", trusted: { formula: "terraform" }
 tap "libkrun/krun", trusted: true
-tap "nikitabobko/tap"
-tap "oven-sh/bun"
-tap "xnoto/opencode-agent-hub", trusted: true
+tap "nikitabobko/tap", trusted: { cask: "aerospace" }
+tap "oven-sh/bun", trusted: { formula: "bun" }
+tap "terraform-linters/tap", trusted: { cask: "tflint" }
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Static checker for GitHub Actions workflow files
@@ -42,8 +41,6 @@ brew "detect-secrets"
 brew "dtc"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Quickly clone an entire org's or user's repositories into one directory
@@ -98,8 +95,6 @@ brew "mongocli"
 brew "mongosh"
 # Atlas CLI enables you to manage your MongoDB Atlas
 brew "mongodb-atlas-cli"
-# Developer-focused CLI for Kubernetes and OpenShift
-brew "odo-dev"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # AI coding agent, built for the terminal
@@ -146,10 +141,6 @@ brew "source-highlight"
 brew "tailscale"
 # Tool to generate documentation from Terraform modules
 brew "terraform-docs"
-# Detect compliance and security violations across Infrastructure as Code
-brew "terrascan"
-# Linter for Terraform files
-brew "tflint"
 # Terminal multiplexer
 brew "tmux"
 # Plugin manager for tmux
@@ -172,14 +163,16 @@ brew "yq"
 brew "yt-dlp"
 # CLI tool to start Linux KVM or macOS HVF VMs using the libkrun
 brew "libkrun/krun/krunkit", trusted: true
-# Multi-agent coordination daemon and tools for OpenCode
-brew "xnoto/opencode-agent-hub/opencode-agent-hub"
+# Hold the installed version after failed VM startup with libkrun 1.19.7.
+# This pin does not select an older version on a new Mac.
+brew "libkrun/krun/libkrun", pin: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
 cask "aerospace"
 # GPU-accelerated terminal emulator
+# Owner waiver (2026-10-26): retain despite the Gatekeeper-disabled cask.
 cask "alacritty"
 # Agent orchestration platform
 cask "antigravity"
@@ -247,6 +240,8 @@ cask "steam"
 cask "tailscale-app"
 # Customizable email client
 cask "thunderbird"
+# Linter for Terraform files
+cask "terraform-linters/tap/tflint"
 # Full-featured companion app to the YubiKey
 cask "yubico-authenticator"
 # Video communication and virtual meeting platform
