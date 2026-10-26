@@ -48,6 +48,8 @@ brew "gemini-cli"
 brew "gh"
 # Quickly clone an entire org's or user's repositories into one directory
 brew "ghorg"
+# Render markdown on the CLI
+brew "glow"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Privacy Guard (OpenPGP)
@@ -187,6 +189,8 @@ cask "antigravity-cli"
 cask "basictex"
 # Desktop password and login vault
 cask "bitwarden"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
